@@ -1,0 +1,553 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		35051D801BF74CF3003C0A27 /* EventsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35051D7F1BF74CF3003C0A27 /* EventsViewController.swift */; };
+		35051D821BF75053003C0A27 /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35051D811BF75053003C0A27 /* Event.swift */; };
+		35051D861BF75192003C0A27 /* EventsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35051D851BF75192003C0A27 /* EventsTableViewCell.swift */; };
+		35051D8C1BF7FDFA003C0A27 /* parse-library-1.9.1 in Resources */ = {isa = PBXBuildFile; fileRef = 35051D8B1BF7FDFA003C0A27 /* parse-library-1.9.1 */; };
+		35051D8E1BF7FE78003C0A27 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 35051D8D1BF7FE78003C0A27 /* AudioToolbox.framework */; };
+		35051D901BF7FE84003C0A27 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 35051D8F1BF7FE84003C0A27 /* CFNetwork.framework */; };
+		35051D921BF7FE93003C0A27 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 35051D911BF7FE93003C0A27 /* CoreGraphics.framework */; };
+		35051D941BF7FE9A003C0A27 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 35051D931BF7FE9A003C0A27 /* CoreLocation.framework */; };
+		35051D961BF7FEA1003C0A27 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 35051D951BF7FEA1003C0A27 /* QuartzCore.framework */; };
+		35051D981BF7FEA9003C0A27 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 35051D971BF7FEA9003C0A27 /* Security.framework */; };
+		35051D9A1BF7FEB1003C0A27 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 35051D991BF7FEB1003C0A27 /* StoreKit.framework */; };
+		35051D9C1BF7FEB8003C0A27 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 35051D9B1BF7FEB8003C0A27 /* SystemConfiguration.framework */; };
+		35051D9E1BF7FEC2003C0A27 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 35051D9D1BF7FEC2003C0A27 /* libz.tbd */; };
+		35051DA01BF7FECB003C0A27 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 35051D9F1BF7FECB003C0A27 /* libsqlite3.tbd */; };
+		35051DA21BF7FED6003C0A27 /* Accounts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 35051DA11BF7FED6003C0A27 /* Accounts.framework */; };
+		35051DA41BF7FEE9003C0A27 /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 35051DA31BF7FEE9003C0A27 /* Social.framework */; };
+		35051DA91BF7FFAD003C0A27 /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 35051DA81BF7FFAD003C0A27 /* Bolts.framework */; };
+		35051DAB1BF7FFB3003C0A27 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 35051DAA1BF7FFB3003C0A27 /* Parse.framework */; };
+		35051DB11BF7FFD6003C0A27 /* ParseCrashReporting.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 35051DAC1BF7FFD6003C0A27 /* ParseCrashReporting.framework */; };
+		35051DB21BF7FFD6003C0A27 /* ParseFacebookUtils.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 35051DAD1BF7FFD6003C0A27 /* ParseFacebookUtils.framework */; };
+		35051DB31BF7FFD6003C0A27 /* ParseFacebookUtilsV4.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 35051DAE1BF7FFD6003C0A27 /* ParseFacebookUtilsV4.framework */; };
+		35051DB41BF7FFD6003C0A27 /* ParseTwitterUtils.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 35051DAF1BF7FFD6003C0A27 /* ParseTwitterUtils.framework */; };
+		35051DB51BF7FFD6003C0A27 /* ParseUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 35051DB01BF7FFD6003C0A27 /* ParseUI.framework */; };
+		35748F931BF736E900E6E62A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35748F921BF736E900E6E62A /* AppDelegate.swift */; };
+		35748F961BF736E900E6E62A /* meetUp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 35748F941BF736E900E6E62A /* meetUp.xcdatamodeld */; };
+		35748F981BF736E900E6E62A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35748F971BF736E900E6E62A /* ViewController.swift */; };
+		35748F9B1BF736EA00E6E62A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 35748F991BF736E900E6E62A /* Main.storyboard */; };
+		35748F9D1BF736EA00E6E62A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 35748F9C1BF736EA00E6E62A /* Images.xcassets */; };
+		35748FA01BF736EA00E6E62A /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 35748F9E1BF736EA00E6E62A /* LaunchScreen.xib */; };
+		35748FAC1BF736EA00E6E62A /* meetUpTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35748FAB1BF736EA00E6E62A /* meetUpTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		35748FA61BF736EA00E6E62A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 35748F851BF736E900E6E62A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 35748F8C1BF736E900E6E62A;
+			remoteInfo = meetUp;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		35051D7F1BF74CF3003C0A27 /* EventsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventsViewController.swift; sourceTree = "<group>"; };
+		35051D811BF75053003C0A27 /* Event.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
+		35051D851BF75192003C0A27 /* EventsTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventsTableViewCell.swift; sourceTree = "<group>"; };
+		35051D8B1BF7FDFA003C0A27 /* parse-library-1.9.1 */ = {isa = PBXFileReference; lastKnownFileType = folder; name = "parse-library-1.9.1"; path = "/Users/waynechi/meetUpApp/meetUp/meetUp/parse-library-1.9.1"; sourceTree = "<absolute>"; };
+		35051D8D1BF7FE78003C0A27 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		35051D8F1BF7FE84003C0A27 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		35051D911BF7FE93003C0A27 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		35051D931BF7FE9A003C0A27 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		35051D951BF7FEA1003C0A27 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		35051D971BF7FEA9003C0A27 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		35051D991BF7FEB1003C0A27 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		35051D9B1BF7FEB8003C0A27 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		35051D9D1BF7FEC2003C0A27 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		35051D9F1BF7FECB003C0A27 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
+		35051DA11BF7FED6003C0A27 /* Accounts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accounts.framework; path = System/Library/Frameworks/Accounts.framework; sourceTree = SDKROOT; };
+		35051DA31BF7FEE9003C0A27 /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
+		35051DA81BF7FFAD003C0A27 /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Bolts.framework; path = "parse-library-1.9.1/Bolts.framework"; sourceTree = "<group>"; };
+		35051DAA1BF7FFB3003C0A27 /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Parse.framework; path = "parse-library-1.9.1/Parse.framework"; sourceTree = "<group>"; };
+		35051DAC1BF7FFD6003C0A27 /* ParseCrashReporting.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ParseCrashReporting.framework; path = "parse-library-1.9.1/ParseCrashReporting.framework"; sourceTree = "<group>"; };
+		35051DAD1BF7FFD6003C0A27 /* ParseFacebookUtils.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ParseFacebookUtils.framework; path = "parse-library-1.9.1/ParseFacebookUtils.framework"; sourceTree = "<group>"; };
+		35051DAE1BF7FFD6003C0A27 /* ParseFacebookUtilsV4.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ParseFacebookUtilsV4.framework; path = "parse-library-1.9.1/ParseFacebookUtilsV4.framework"; sourceTree = "<group>"; };
+		35051DAF1BF7FFD6003C0A27 /* ParseTwitterUtils.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ParseTwitterUtils.framework; path = "parse-library-1.9.1/ParseTwitterUtils.framework"; sourceTree = "<group>"; };
+		35051DB01BF7FFD6003C0A27 /* ParseUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ParseUI.framework; path = "parse-library-1.9.1/ParseUI.framework"; sourceTree = "<group>"; };
+		35748F8D1BF736E900E6E62A /* meetUp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = meetUp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		35748F911BF736E900E6E62A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		35748F921BF736E900E6E62A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		35748F951BF736E900E6E62A /* meetUp.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = meetUp.xcdatamodel; sourceTree = "<group>"; };
+		35748F971BF736E900E6E62A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		35748F9A1BF736E900E6E62A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		35748F9C1BF736EA00E6E62A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		35748F9F1BF736EA00E6E62A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		35748FA51BF736EA00E6E62A /* meetUpTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = meetUpTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		35748FAA1BF736EA00E6E62A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		35748FAB1BF736EA00E6E62A /* meetUpTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = meetUpTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		35748F8A1BF736E900E6E62A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				35051DA41BF7FEE9003C0A27 /* Social.framework in Frameworks */,
+				35051DA21BF7FED6003C0A27 /* Accounts.framework in Frameworks */,
+				35051DA01BF7FECB003C0A27 /* libsqlite3.tbd in Frameworks */,
+				35051DA91BF7FFAD003C0A27 /* Bolts.framework in Frameworks */,
+				35051DAB1BF7FFB3003C0A27 /* Parse.framework in Frameworks */,
+				35051D9E1BF7FEC2003C0A27 /* libz.tbd in Frameworks */,
+				35051D9C1BF7FEB8003C0A27 /* SystemConfiguration.framework in Frameworks */,
+				35051D9A1BF7FEB1003C0A27 /* StoreKit.framework in Frameworks */,
+				35051D981BF7FEA9003C0A27 /* Security.framework in Frameworks */,
+				35051D961BF7FEA1003C0A27 /* QuartzCore.framework in Frameworks */,
+				35051DB11BF7FFD6003C0A27 /* ParseCrashReporting.framework in Frameworks */,
+				35051DB21BF7FFD6003C0A27 /* ParseFacebookUtils.framework in Frameworks */,
+				35051DB31BF7FFD6003C0A27 /* ParseFacebookUtilsV4.framework in Frameworks */,
+				35051DB41BF7FFD6003C0A27 /* ParseTwitterUtils.framework in Frameworks */,
+				35051DB51BF7FFD6003C0A27 /* ParseUI.framework in Frameworks */,
+				35051D941BF7FE9A003C0A27 /* CoreLocation.framework in Frameworks */,
+				35051D921BF7FE93003C0A27 /* CoreGraphics.framework in Frameworks */,
+				35051D901BF7FE84003C0A27 /* CFNetwork.framework in Frameworks */,
+				35051D8E1BF7FE78003C0A27 /* AudioToolbox.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		35748FA21BF736EA00E6E62A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		35748F841BF736E900E6E62A = {
+			isa = PBXGroup;
+			children = (
+				35051DAC1BF7FFD6003C0A27 /* ParseCrashReporting.framework */,
+				35051DAD1BF7FFD6003C0A27 /* ParseFacebookUtils.framework */,
+				35051DAE1BF7FFD6003C0A27 /* ParseFacebookUtilsV4.framework */,
+				35051DAF1BF7FFD6003C0A27 /* ParseTwitterUtils.framework */,
+				35051DB01BF7FFD6003C0A27 /* ParseUI.framework */,
+				35051DAA1BF7FFB3003C0A27 /* Parse.framework */,
+				35051DA81BF7FFAD003C0A27 /* Bolts.framework */,
+				35051DA31BF7FEE9003C0A27 /* Social.framework */,
+				35051DA11BF7FED6003C0A27 /* Accounts.framework */,
+				35051D9F1BF7FECB003C0A27 /* libsqlite3.tbd */,
+				35051D9D1BF7FEC2003C0A27 /* libz.tbd */,
+				35051D9B1BF7FEB8003C0A27 /* SystemConfiguration.framework */,
+				35051D991BF7FEB1003C0A27 /* StoreKit.framework */,
+				35051D971BF7FEA9003C0A27 /* Security.framework */,
+				35051D951BF7FEA1003C0A27 /* QuartzCore.framework */,
+				35051D931BF7FE9A003C0A27 /* CoreLocation.framework */,
+				35051D911BF7FE93003C0A27 /* CoreGraphics.framework */,
+				35051D8F1BF7FE84003C0A27 /* CFNetwork.framework */,
+				35051D8D1BF7FE78003C0A27 /* AudioToolbox.framework */,
+				35748F8F1BF736E900E6E62A /* meetUp */,
+				35748FA81BF736EA00E6E62A /* meetUpTests */,
+				35748F8E1BF736E900E6E62A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		35748F8E1BF736E900E6E62A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				35748F8D1BF736E900E6E62A /* meetUp.app */,
+				35748FA51BF736EA00E6E62A /* meetUpTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		35748F8F1BF736E900E6E62A /* meetUp */ = {
+			isa = PBXGroup;
+			children = (
+				35748F921BF736E900E6E62A /* AppDelegate.swift */,
+				35748F971BF736E900E6E62A /* ViewController.swift */,
+				3577F1091BF73FBE005F21BC /* EventsTable */,
+				35748F991BF736E900E6E62A /* Main.storyboard */,
+				35748F9C1BF736EA00E6E62A /* Images.xcassets */,
+				35748F9E1BF736EA00E6E62A /* LaunchScreen.xib */,
+				35748F941BF736E900E6E62A /* meetUp.xcdatamodeld */,
+				35748F901BF736E900E6E62A /* Supporting Files */,
+			);
+			path = meetUp;
+			sourceTree = "<group>";
+		};
+		35748F901BF736E900E6E62A /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				35748F911BF736E900E6E62A /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		35748FA81BF736EA00E6E62A /* meetUpTests */ = {
+			isa = PBXGroup;
+			children = (
+				35748FAB1BF736EA00E6E62A /* meetUpTests.swift */,
+				35748FA91BF736EA00E6E62A /* Supporting Files */,
+			);
+			path = meetUpTests;
+			sourceTree = "<group>";
+		};
+		35748FA91BF736EA00E6E62A /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				35748FAA1BF736EA00E6E62A /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		3577F1091BF73FBE005F21BC /* EventsTable */ = {
+			isa = PBXGroup;
+			children = (
+				35051D7F1BF74CF3003C0A27 /* EventsViewController.swift */,
+				35051D851BF75192003C0A27 /* EventsTableViewCell.swift */,
+				35051D811BF75053003C0A27 /* Event.swift */,
+			);
+			name = EventsTable;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		35748F8C1BF736E900E6E62A /* meetUp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 35748FAF1BF736EA00E6E62A /* Build configuration list for PBXNativeTarget "meetUp" */;
+			buildPhases = (
+				35748F891BF736E900E6E62A /* Sources */,
+				35748F8A1BF736E900E6E62A /* Frameworks */,
+				35748F8B1BF736E900E6E62A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = meetUp;
+			productName = meetUp;
+			productReference = 35748F8D1BF736E900E6E62A /* meetUp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		35748FA41BF736EA00E6E62A /* meetUpTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 35748FB21BF736EA00E6E62A /* Build configuration list for PBXNativeTarget "meetUpTests" */;
+			buildPhases = (
+				35748FA11BF736EA00E6E62A /* Sources */,
+				35748FA21BF736EA00E6E62A /* Frameworks */,
+				35748FA31BF736EA00E6E62A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				35748FA71BF736EA00E6E62A /* PBXTargetDependency */,
+			);
+			name = meetUpTests;
+			productName = meetUpTests;
+			productReference = 35748FA51BF736EA00E6E62A /* meetUpTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		35748F851BF736E900E6E62A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftMigration = 0710;
+				LastSwiftUpdateCheck = 0710;
+				LastUpgradeCheck = 0710;
+				ORGANIZATIONNAME = Wayne;
+				TargetAttributes = {
+					35748F8C1BF736E900E6E62A = {
+						CreatedOnToolsVersion = 6.2;
+					};
+					35748FA41BF736EA00E6E62A = {
+						CreatedOnToolsVersion = 6.2;
+						TestTargetID = 35748F8C1BF736E900E6E62A;
+					};
+				};
+			};
+			buildConfigurationList = 35748F881BF736E900E6E62A /* Build configuration list for PBXProject "meetUp" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 35748F841BF736E900E6E62A;
+			productRefGroup = 35748F8E1BF736E900E6E62A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				35748F8C1BF736E900E6E62A /* meetUp */,
+				35748FA41BF736EA00E6E62A /* meetUpTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		35748F8B1BF736E900E6E62A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				35051D8C1BF7FDFA003C0A27 /* parse-library-1.9.1 in Resources */,
+				35748F9B1BF736EA00E6E62A /* Main.storyboard in Resources */,
+				35748FA01BF736EA00E6E62A /* LaunchScreen.xib in Resources */,
+				35748F9D1BF736EA00E6E62A /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		35748FA31BF736EA00E6E62A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		35748F891BF736E900E6E62A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				35748F981BF736E900E6E62A /* ViewController.swift in Sources */,
+				35051D801BF74CF3003C0A27 /* EventsViewController.swift in Sources */,
+				35748F931BF736E900E6E62A /* AppDelegate.swift in Sources */,
+				35748F961BF736E900E6E62A /* meetUp.xcdatamodeld in Sources */,
+				35051D861BF75192003C0A27 /* EventsTableViewCell.swift in Sources */,
+				35051D821BF75053003C0A27 /* Event.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		35748FA11BF736EA00E6E62A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				35748FAC1BF736EA00E6E62A /* meetUpTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		35748FA71BF736EA00E6E62A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 35748F8C1BF736E900E6E62A /* meetUp */;
+			targetProxy = 35748FA61BF736EA00E6E62A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		35748F991BF736E900E6E62A /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				35748F9A1BF736E900E6E62A /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		35748F9E1BF736EA00E6E62A /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				35748F9F1BF736EA00E6E62A /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		35748FAD1BF736EA00E6E62A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		35748FAE1BF736EA00E6E62A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		35748FB01BF736EA00E6E62A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/parse-library-1.9.1",
+				);
+				INFOPLIST_FILE = meetUp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Chi.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		35748FB11BF736EA00E6E62A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/parse-library-1.9.1",
+				);
+				INFOPLIST_FILE = meetUp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Chi.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		35748FB31BF736EA00E6E62A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = meetUpTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Chi.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/meetUp.app/meetUp";
+			};
+			name = Debug;
+		};
+		35748FB41BF736EA00E6E62A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = meetUpTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Chi.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/meetUp.app/meetUp";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		35748F881BF736E900E6E62A /* Build configuration list for PBXProject "meetUp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				35748FAD1BF736EA00E6E62A /* Debug */,
+				35748FAE1BF736EA00E6E62A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		35748FAF1BF736EA00E6E62A /* Build configuration list for PBXNativeTarget "meetUp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				35748FB01BF736EA00E6E62A /* Debug */,
+				35748FB11BF736EA00E6E62A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		35748FB21BF736EA00E6E62A /* Build configuration list for PBXNativeTarget "meetUpTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				35748FB31BF736EA00E6E62A /* Debug */,
+				35748FB41BF736EA00E6E62A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		35748F941BF736E900E6E62A /* meetUp.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				35748F951BF736E900E6E62A /* meetUp.xcdatamodel */,
+			);
+			currentVersion = 35748F951BF736E900E6E62A /* meetUp.xcdatamodel */;
+			path = meetUp.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 35748F851BF736E900E6E62A /* Project object */;
+}
