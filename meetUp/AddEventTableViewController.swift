@@ -8,7 +8,16 @@
 
 import UIKit
 
-class AddEventTableViewController: UITableViewController, UITextFieldDelegate, UITextViewDelegate{
+protocol AddEventViewControllerDelegate{
+    func passEvent(eventPassed: Dictionary<String,String>)
+}
+
+
+class AddEventTableViewController: UITableViewController, UITextFieldDelegate, UITextViewDelegate, UIPickerViewDelegate, UIPickerViewDataSource{
+    
+    var dict = Dictionary<String,String>()
+    var pickerData: [String] = [String]()
+    var pickerViewCurrRow: Int!
     
     @IBOutlet weak var NameTextField: UITextField!
     
@@ -16,18 +25,59 @@ class AddEventTableViewController: UITableViewController, UITextFieldDelegate, U
     
     @IBOutlet weak var NoPeopleScroll: UIPickerView!
     
+    @IBOutlet weak var DatePick: UIDatePicker!
+    
+    @IBOutlet weak var StartTimePick: UIDatePicker!
+    
+    @IBOutlet weak var EndTimePick: UIDatePicker!
+    
+    @IBOutlet weak var LocationInformation: UITextField!
+    
+    @IBOutlet weak var MoreInfoField: UITextView!
+    
+    @IBOutlet weak var CancelButton: UIBarButtonItem!
     @IBOutlet weak var DoneButton: UIBarButtonItem!
+    
+    @IBAction func doCancelButtton(sender: UIBarButtonItem){
+        if sender.tag == 1{
+            dismissViewControllerAnimated(true, completion: nil)
+        }
+        
+    }
+    @IBAction func doDoneButtton(sender: UIBarButtonItem){
+        if sender.tag == 2{
+            dict["name"] = NameTextField.text
+            let dateFormat = NSDateFormatter()
+            
+            
+            dict["date"] = dateFormat.stringFromDate(DatePick.date)
+            dict["stime"] = dateFormat.stringFromDate(StartTimePick.date)
+            dict["etime"] = dateFormat.stringFromDate(EndTimePick.date)
+            
+            dict["numpeople"] = pickerData[pickerViewCurrRow]
+            dict["info"] = MoreInfoField.text
+            
+            //dict["location_lat"] =
+            
+            //dict["location_long"] =
+            
+        }
+        // name, date, start time, end time, location, no people, more info
+    }
+    
+    
+    
     
     func textFieldShouldReturn(textField: UITextField) -> Bool {
         textField.resignFirstResponder()
         return true
     }
     
-    
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        CancelButton.tag = 1
+        DoneButton.tag = 2
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
         
@@ -36,7 +86,7 @@ class AddEventTableViewController: UITableViewController, UITextFieldDelegate, U
         //var borderColor : UIColor = UIColor(red: 0.85, green: 0.85, blue: 0.85, alpha: 1.0)
         let tapGesture = UITapGestureRecognizer(target: self, action: "tap:")
         view.addGestureRecognizer(tapGesture)
-        
+        pickerViewCurrRow = 0
         MoreInfoTextView.layer.borderWidth = 0.5
         MoreInfoTextView.layer.borderColor = UIColor.grayColor().CGColor
         MoreInfoTextView.layer.cornerRadius = 5.0
@@ -44,12 +94,32 @@ class AddEventTableViewController: UITableViewController, UITextFieldDelegate, U
         
         NameTextField.delegate = self
         
+        pickerData = ["1","2","3","4","5","6","7","8","9","10","11","12","13","14","15","16","17","18","19","20"]
+        NoPeopleScroll.delegate = self
+        NoPeopleScroll.dataSource = self
         
         //NameTextField.returnKeyType = .Done
         
-       // NoPeopleScroll.delegate = self
+        // NoPeopleScroll.delegate = self
         
     }
+    // The number of columns of data
+    func numberOfComponentsInPickerView(pickerView: UIPickerView) -> Int {
+        return 1
+    }
+    
+    func pickerView(pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
+        return pickerData.count
+    }
+    func pickerView(pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
+        return pickerData[row]
+    }
+    
+    func pickerView(pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
+        pickerViewCurrRow = row
+    }
+    
+    
     func tap(gesture: UITapGestureRecognizer){
         NameTextField.resignFirstResponder()
         MoreInfoTextView.resignFirstResponder()

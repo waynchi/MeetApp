@@ -18,39 +18,59 @@ class MapController: UIViewController, MKMapViewDelegate, CLLocationManagerDeleg
     var locationManager:CLLocationManager!
     var locationFixAchieved : Bool = false
     var startPin: MKPointAnnotation!
+    
+    var savedLatitude: Double!
+    var savedLongitude: Double!
+    
     @IBOutlet weak var MapView: MKMapView!
     
-
+    @IBAction func doDoneButton(sender: UIBarButtonItem){
+        if sender.tag == 1{
+            dismissViewControllerAnimated(true, completion: nil)
+        }
+        
+    }
+    @IBAction func doCancelButtion(sender: UIBarButtonItem){
+        if sender.tag == 2{
+            savedLatitude = MapView.centerCoordinate.latitude
+            savedLongitude = MapView.centerCoordinate.longitude
+            dismissViewControllerAnimated(true, completion: nil)
+        }
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        /* locationManager.delegate = self
+        savedLatitude = 0;
+        savedLongitude = 0;
+        MapDoneButton.tag = 2;
+        MapCancelButton.tag = 1;
+        /*
+        locationManager.delegate = self
         locationManager.desiredAccuracy = kCLLocationAccuracyBest
         locationManager.requestWhenInUseAuthorization()
         locationManager.startUpdatingLocation()
         */
         
-       
+        
         
         MapView.delegate = self
         
         locationFixAchieved = false
         
         locationManager = CLLocationManager()
-        
-        locationManager.requestWhenInUseAuthorization()
-
         locationManager.delegate = self
+        
+        locationManager.requestAlwaysAuthorization()
         locationManager.startUpdatingLocation()
+        
+        
         locationManager.desiredAccuracy = kCLLocationAccuracyBest
         
         startPin = MKPointAnnotation()
-       
         
+        
+        sleep(1)
         startPin.coordinate = CLLocationCoordinate2DMake(locationManager.location!.coordinate.latitude, locationManager.location!.coordinate.longitude)
-        
-        
         
         MapView.addAnnotation(startPin)
         
@@ -64,11 +84,14 @@ class MapController: UIViewController, MKMapViewDelegate, CLLocationManagerDeleg
         
         MapView.setRegion(coordinateRegion, animated: true) // center mapview to user location
         
-      //add pin image
-        let newPoint = self.MapView.convertCoordinate(MapView.centerCoordinate, toPointToView: self.view)
-
         
-        let pinImage = UIImage(named: "Resources//red_pin.png")
+        
+        
+        //add pin image
+        let newPoint = self.MapView.convertCoordinate(MapView.centerCoordinate, toPointToView: self.view)
+        
+        
+        let pinImage = UIImage(named: "red_pin.png")
         let imageView = UIImageView(image: pinImage) // set as you want
         
         imageView.image = pinImage
@@ -77,17 +100,28 @@ class MapController: UIViewController, MKMapViewDelegate, CLLocationManagerDeleg
         imageView.center.y = newPoint.y
         imageView.center.x = newPoint.x
         
+        view.addSubview((imageView))
+        ///////////////
         
-        self.view.addSubview(imageView)
-        
-        
-        
-    }
-    func MapView(MapView: MKMapView!, regionDidChangeAnimated animated: Bool) {
-        startPin.coordinate = MapView.centerCoordinate;
         
     }
-
+    
+    func mapView(mapView: MKMapView, regionDidChangeAnimated animated: Bool) { // updates pin location
+        startPin.coordinate = CLLocationCoordinate2DMake(MapView.centerCoordinate.latitude, MapView.centerCoordinate.longitude)
+    }
+    
+    
+    
+    func MapView(mapView: MKMapView!, annotationView view: MKAnnotationView!, didChangeDragState newState: MKAnnotationViewDragState, fromOldState oldState: MKAnnotationViewDragState) {
+        switch (newState) {
+        case .Starting:
+            view.dragState = .Dragging
+        case .Ending, .Canceling:
+            view.dragState = .None
+        default: break
+        }
+    }
+    
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
