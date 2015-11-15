@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		183C06D01BF885F6005EC0E4 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 183C06CF1BF885F6005EC0E4 /* LoginViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		183C06D21BF8862D005EC0E4 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 183C06D11BF8862D005EC0E4 /* SignUpViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		183C06D41BF88644005EC0E4 /* ResetPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 183C06D31BF88644005EC0E4 /* ResetPasswordViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		35748F931BF736E900E6E62A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35748F921BF736E900E6E62A /* AppDelegate.swift */; };
 		35748F961BF736E900E6E62A /* meetUp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 35748F941BF736E900E6E62A /* meetUp.xcdatamodeld */; };
 		35748F981BF736E900E6E62A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35748F971BF736E900E6E62A /* ViewController.swift */; };
@@ -30,6 +33,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		183C06CF1BF885F6005EC0E4 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		183C06D11BF8862D005EC0E4 /* SignUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		183C06D31BF88644005EC0E4 /* ResetPasswordViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResetPasswordViewController.swift; sourceTree = "<group>"; };
 		35748F8D1BF736E900E6E62A /* meetUp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = meetUp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		35748F911BF736E900E6E62A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		35748F921BF736E900E6E62A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -88,6 +94,9 @@
 			isa = PBXGroup;
 			children = (
 				35748F921BF736E900E6E62A /* AppDelegate.swift */,
+				183C06CF1BF885F6005EC0E4 /* LoginViewController.swift */,
+				183C06D11BF8862D005EC0E4 /* SignUpViewController.swift */,
+				183C06D31BF88644005EC0E4 /* ResetPasswordViewController.swift */,
 				35748F971BF736E900E6E62A /* ViewController.swift */,
 				35748F991BF736E900E6E62A /* Main.storyboard */,
 				3FC087481BF7F6BD0002172E /* MapController.swift */,
@@ -227,7 +236,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				183C06D01BF885F6005EC0E4 /* LoginViewController.swift in Sources */,
+				183C06D21BF8862D005EC0E4 /* SignUpViewController.swift in Sources */,
 				35748F981BF736E900E6E62A /* ViewController.swift in Sources */,
+				183C06D41BF88644005EC0E4 /* ResetPasswordViewController.swift in Sources */,
 				35748F931BF736E900E6E62A /* AppDelegate.swift in Sources */,
 				3F99C4361BF759F50055C48C /* AddEventTableViewController.swift in Sources */,
 				3FC087491BF7F6BD0002172E /* MapController.swift in Sources */,
