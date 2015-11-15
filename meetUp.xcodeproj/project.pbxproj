@@ -7,6 +7,24 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		183C06D01BF885F6005EC0E4 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 183C06CF1BF885F6005EC0E4 /* LoginViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		183C06D21BF8862D005EC0E4 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 183C06D11BF8862D005EC0E4 /* SignUpViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		183C06D41BF88644005EC0E4 /* ResetPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 183C06D31BF88644005EC0E4 /* ResetPasswordViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		183C06E41BF88982005EC0E4 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 183C06E31BF88982005EC0E4 /* AudioToolbox.framework */; };
+		183C06E61BF8898A005EC0E4 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 183C06E51BF8898A005EC0E4 /* CFNetwork.framework */; };
+		183C06E81BF88993005EC0E4 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 183C06E71BF88993005EC0E4 /* CoreGraphics.framework */; };
+		183C06EA1BF8899A005EC0E4 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 183C06E91BF8899A005EC0E4 /* CoreLocation.framework */; };
+		183C06EC1BF889A5005EC0E4 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 183C06EB1BF889A5005EC0E4 /* QuartzCore.framework */; };
+		183C06EE1BF889AD005EC0E4 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 183C06ED1BF889AD005EC0E4 /* Security.framework */; };
+		183C06F01BF889B3005EC0E4 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 183C06EF1BF889B3005EC0E4 /* StoreKit.framework */; };
+		183C06F21BF88A0D005EC0E4 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 183C06F11BF88A0D005EC0E4 /* SystemConfiguration.framework */; };
+		183C06F41BF88A1D005EC0E4 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 183C06F31BF88A1D005EC0E4 /* libz.tbd */; };
+		183C06F61BF88A26005EC0E4 /* libsqlite3.0.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 183C06F51BF88A26005EC0E4 /* libsqlite3.0.tbd */; };
+		183C06F91BF88B46005EC0E4 /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 183C06F71BF88B46005EC0E4 /* Bolts.framework */; settings = {ASSET_TAGS = (); }; };
+		183C06FA1BF88B46005EC0E4 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 183C06F81BF88B46005EC0E4 /* Parse.framework */; settings = {ASSET_TAGS = (); }; };
+		183C06FC1BF88C18005EC0E4 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 183C06FB1BF88C18005EC0E4 /* HomeViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		183C07031BF8A0A5005EC0E4 /* user.png in Resources */ = {isa = PBXBuildFile; fileRef = 183C07011BF8A0A5005EC0E4 /* user.png */; settings = {ASSET_TAGS = (); }; };
+		183C07041BF8A0A5005EC0E4 /* user@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 183C07021BF8A0A5005EC0E4 /* user@2x.png */; settings = {ASSET_TAGS = (); }; };
 		35748F931BF736E900E6E62A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35748F921BF736E900E6E62A /* AppDelegate.swift */; };
 		35748F961BF736E900E6E62A /* meetUp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 35748F941BF736E900E6E62A /* meetUp.xcdatamodeld */; };
 		35748F981BF736E900E6E62A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35748F971BF736E900E6E62A /* ViewController.swift */; };
@@ -16,7 +34,6 @@
 		35748FAC1BF736EA00E6E62A /* meetUpTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35748FAB1BF736EA00E6E62A /* meetUpTests.swift */; };
 		3F99C4361BF759F50055C48C /* AddEventTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F99C4351BF759F50055C48C /* AddEventTableViewController.swift */; };
 		3FC087491BF7F6BD0002172E /* MapController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FC087481BF7F6BD0002172E /* MapController.swift */; };
-		3FC0874B1BF7FD570002172E /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3FC0874A1BF7FD570002172E /* MapKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -30,6 +47,24 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		183C06CF1BF885F6005EC0E4 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		183C06D11BF8862D005EC0E4 /* SignUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		183C06D31BF88644005EC0E4 /* ResetPasswordViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResetPasswordViewController.swift; sourceTree = "<group>"; };
+		183C06E31BF88982005EC0E4 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		183C06E51BF8898A005EC0E4 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		183C06E71BF88993005EC0E4 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		183C06E91BF8899A005EC0E4 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		183C06EB1BF889A5005EC0E4 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		183C06ED1BF889AD005EC0E4 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		183C06EF1BF889B3005EC0E4 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		183C06F11BF88A0D005EC0E4 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		183C06F31BF88A1D005EC0E4 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		183C06F51BF88A26005EC0E4 /* libsqlite3.0.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.0.tbd; path = usr/lib/libsqlite3.0.tbd; sourceTree = SDKROOT; };
+		183C06F71BF88B46005EC0E4 /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Bolts.framework; sourceTree = "<group>"; };
+		183C06F81BF88B46005EC0E4 /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
+		183C06FB1BF88C18005EC0E4 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		183C07011BF8A0A5005EC0E4 /* user.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = user.png; sourceTree = "<group>"; };
+		183C07021BF8A0A5005EC0E4 /* user@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "user@2x.png"; sourceTree = "<group>"; };
 		35748F8D1BF736E900E6E62A /* meetUp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = meetUp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		35748F911BF736E900E6E62A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		35748F921BF736E900E6E62A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -43,7 +78,6 @@
 		35748FAB1BF736EA00E6E62A /* meetUpTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = meetUpTests.swift; sourceTree = "<group>"; };
 		3F99C4351BF759F50055C48C /* AddEventTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddEventTableViewController.swift; sourceTree = "<group>"; };
 		3FC087481BF7F6BD0002172E /* MapController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapController.swift; sourceTree = "<group>"; };
-		3FC0874A1BF7FD570002172E /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,7 +85,18 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3FC0874B1BF7FD570002172E /* MapKit.framework in Frameworks */,
+				183C06F61BF88A26005EC0E4 /* libsqlite3.0.tbd in Frameworks */,
+				183C06F41BF88A1D005EC0E4 /* libz.tbd in Frameworks */,
+				183C06F21BF88A0D005EC0E4 /* SystemConfiguration.framework in Frameworks */,
+				183C06F01BF889B3005EC0E4 /* StoreKit.framework in Frameworks */,
+				183C06EE1BF889AD005EC0E4 /* Security.framework in Frameworks */,
+				183C06EC1BF889A5005EC0E4 /* QuartzCore.framework in Frameworks */,
+				183C06EA1BF8899A005EC0E4 /* CoreLocation.framework in Frameworks */,
+				183C06E81BF88993005EC0E4 /* CoreGraphics.framework in Frameworks */,
+				183C06F91BF88B46005EC0E4 /* Bolts.framework in Frameworks */,
+				183C06E61BF8898A005EC0E4 /* CFNetwork.framework in Frameworks */,
+				183C06FA1BF88B46005EC0E4 /* Parse.framework in Frameworks */,
+				183C06E41BF88982005EC0E4 /* AudioToolbox.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -68,7 +113,18 @@
 		35748F841BF736E900E6E62A = {
 			isa = PBXGroup;
 			children = (
-				3FC0874A1BF7FD570002172E /* MapKit.framework */,
+				183C06F71BF88B46005EC0E4 /* Bolts.framework */,
+				183C06F81BF88B46005EC0E4 /* Parse.framework */,
+				183C06F51BF88A26005EC0E4 /* libsqlite3.0.tbd */,
+				183C06F31BF88A1D005EC0E4 /* libz.tbd */,
+				183C06F11BF88A0D005EC0E4 /* SystemConfiguration.framework */,
+				183C06EF1BF889B3005EC0E4 /* StoreKit.framework */,
+				183C06ED1BF889AD005EC0E4 /* Security.framework */,
+				183C06EB1BF889A5005EC0E4 /* QuartzCore.framework */,
+				183C06E91BF8899A005EC0E4 /* CoreLocation.framework */,
+				183C06E71BF88993005EC0E4 /* CoreGraphics.framework */,
+				183C06E51BF8898A005EC0E4 /* CFNetwork.framework */,
+				183C06E31BF88982005EC0E4 /* AudioToolbox.framework */,
 				35748F8F1BF736E900E6E62A /* meetUp */,
 				35748FA81BF736EA00E6E62A /* meetUpTests */,
 				35748F8E1BF736E900E6E62A /* Products */,
@@ -88,10 +144,16 @@
 			isa = PBXGroup;
 			children = (
 				35748F921BF736E900E6E62A /* AppDelegate.swift */,
+				183C06CF1BF885F6005EC0E4 /* LoginViewController.swift */,
+				183C06D11BF8862D005EC0E4 /* SignUpViewController.swift */,
+				183C06D31BF88644005EC0E4 /* ResetPasswordViewController.swift */,
+				183C06FB1BF88C18005EC0E4 /* HomeViewController.swift */,
 				35748F971BF736E900E6E62A /* ViewController.swift */,
 				35748F991BF736E900E6E62A /* Main.storyboard */,
 				3FC087481BF7F6BD0002172E /* MapController.swift */,
 				35748F9C1BF736EA00E6E62A /* Images.xcassets */,
+				183C07011BF8A0A5005EC0E4 /* user.png */,
+				183C07021BF8A0A5005EC0E4 /* user@2x.png */,
 				35748F9E1BF736EA00E6E62A /* LaunchScreen.xib */,
 				35748F941BF736E900E6E62A /* meetUp.xcdatamodeld */,
 				35748F901BF736E900E6E62A /* Supporting Files */,
@@ -171,7 +233,7 @@
 			attributes = {
 				LastSwiftMigration = 0700;
 				LastSwiftUpdateCheck = 0700;
-				LastUpgradeCheck = 0620;
+				LastUpgradeCheck = 0700;
 				ORGANIZATIONNAME = Wayne;
 				TargetAttributes = {
 					35748F8C1BF736E900E6E62A = {
@@ -209,6 +271,8 @@
 			files = (
 				35748F9B1BF736EA00E6E62A /* Main.storyboard in Resources */,
 				35748FA01BF736EA00E6E62A /* LaunchScreen.xib in Resources */,
+				183C07041BF8A0A5005EC0E4 /* user@2x.png in Resources */,
+				183C07031BF8A0A5005EC0E4 /* user.png in Resources */,
 				35748F9D1BF736EA00E6E62A /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -227,8 +291,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				183C06D01BF885F6005EC0E4 /* LoginViewController.swift in Sources */,
+				183C06D21BF8862D005EC0E4 /* SignUpViewController.swift in Sources */,
 				35748F981BF736E900E6E62A /* ViewController.swift in Sources */,
+				183C06D41BF88644005EC0E4 /* ResetPasswordViewController.swift in Sources */,
 				35748F931BF736E900E6E62A /* AppDelegate.swift in Sources */,
+				183C06FC1BF88C18005EC0E4 /* HomeViewController.swift in Sources */,
 				3F99C4361BF759F50055C48C /* AddEventTableViewController.swift in Sources */,
 				3FC087491BF7F6BD0002172E /* MapController.swift in Sources */,
 				35748F961BF736E900E6E62A /* meetUp.xcdatamodeld in Sources */,
@@ -293,6 +361,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
@@ -354,8 +423,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = meetUp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Chi.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -364,8 +438,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = meetUp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Chi.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -384,6 +463,7 @@
 				);
 				INFOPLIST_FILE = meetUpTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Chi.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/meetUp.app/meetUp";
 			};
@@ -399,6 +479,7 @@
 				);
 				INFOPLIST_FILE = meetUpTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Chi.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/meetUp.app/meetUp";
 			};
