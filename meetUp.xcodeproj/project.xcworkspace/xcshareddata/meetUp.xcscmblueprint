@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "4DA9FA493CEC62F5CB8C8F03C08FE744CDB656AE",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "4DA9FA493CEC62F5CB8C8F03C08FE744CDB656AE" : 0,
+    "8AACC24B28F9D551009BD1041CCACDB7CD430BBB" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "7BFEA23E-4F04-4E6E-A339-280D3CEDE44D",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "4DA9FA493CEC62F5CB8C8F03C08FE744CDB656AE" : "MeetApp\/",
+    "8AACC24B28F9D551009BD1041CCACDB7CD430BBB" : "meetUpApp"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "meetUp",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "meetUp.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/waynchi\/MeetApp.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "4DA9FA493CEC62F5CB8C8F03C08FE744CDB656AE"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/waynchi\/meetUpApp.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "8AACC24B28F9D551009BD1041CCACDB7CD430BBB"
+    }
+  ]
+}
